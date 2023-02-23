@@ -21,10 +21,10 @@ Uses Python to produce a plot of the Goodman failure envelope.  Also plots the w
   * head grepout
   * vi FESAFE.odb-history.txt
   * <line number> <shift+g>
-  * <ma>
+  * <m a>
   * <ctrl+end>
-  * <d'a>
-  * <:wq>
+  * <d ' a>
+  * <: w q>
   * mv FESAFE.odb-history.txt FESAFE.txt
 
 ## abaqusMacros.py
