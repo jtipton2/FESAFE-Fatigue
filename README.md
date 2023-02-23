@@ -18,15 +18,15 @@ FE-SAFE analysis settings.  It is in XML markup language and can be difficult to
 ## FESAFE_Fatigue_Plots.py
 Uses Python to produce a plot of the Goodman failure envelope.  Also plots the worst-case mean stress and stress amplitude for each element of the stress analysis.  This uses a history text file with the Haigh diagram that is requested in the FE-SAFE fatigue analysis.  Must first clean up this file as follows:
 ```
-  * cat FESAFE.odb-history.txt | grep -n 'El#' > grepout
-  * head grepout
-  * vi FESAFE.odb-history.txt
-  * \[line number\] \[shift+g\]
-  * \[m a\]
-  * \[ctrl+end\]
-  * \[d ' a\]
-  * \[: w q\]
-  * mv FESAFE.odb-history.txt FESAFE.txt
+  cat FESAFE.odb-history.txt | grep -n 'El#' > grepout
+  head grepout
+  vi FESAFE.odb-history.txt
+  <line number> <shift+g>
+  <m a>
+  <ctrl+end>
+  <d ' a>
+  <: w q>
+  mv FESAFE.odb-history.txt FESAFE.txt
 ```
 
 ## abaqusMacros.py
