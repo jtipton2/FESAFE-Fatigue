@@ -1,0 +1,40 @@
+#
+# FE-SAFE MACRO
+# JBTipton, Jr.
+# 10/1/2021
+#
+
+#
+# ACTIVE DIRECTORY
+# (can use relative links from here)
+# 
+SwitchToProject /data2/home/tvj/Documents/10_ConceptExploration/v10_Lasagna/1_DoubleRibs/Unirrad/FESAFE_IN718
+ 
+# PRE-SCAN PRE-SCAN COMMANDS
+pre-scan files LasagnaOpt_Dynamic_IN718_Pulses.odb
+ 
+# PRE-SCAN POSITION COMMAND
+pre-scan position elemental
+pre-scan deselect all
+ 
+# PRE-SCAN OPTIONS
+pre-scan select groups
+pre-scan select detect-surface
+ 
+# PRE-SCAN SELECT COMMANDS
+#pre-scan select step "Step-2" stress
+pre-scan select all stress
+ 
+# PRE-SCAN OPEN COMMAND
+pre-scan open selected
+ 
+# GROUPS COMMANDS
+groups list deselect all
+ 
+# GROUPS COMMANDS
+# (This is the Abaqus mesh block name that you want to analyze.
+#  Replace any periods with an underscore.)
+groups list select "PART-DEFAULT_1_SHROUD"
+
+# RUN FE-SAFE ANALYSIS
+fe-safe b=Abq_Fatigue.stlx

@@ -1,0 +1,402 @@
+<!DOCTYPE settings>
+<root>
+    <!--fe-safe Settings File-->
+    <meta version="3"/>
+    <data>
+        <group name="project">
+            <group name="interfaces">
+                <boolean name="load all groups">true</boolean>
+                <boolean name="add surface groups">true</boolean>
+            </group>
+            <directory name="generated results directory">./results</directory>
+            <integer name="diagnostic level">0</integer>
+            <group name="model">
+                <file name="mesh source file">LasagnaOpt_Dynamic_IN718_Pulses.odb</file>
+                <file name="source file">LasagnaOpt_Dynamic_IN718_Pulses.odb</file>
+                <group name="stress units">
+                    <string name="description">Pa</string>
+                    <real name="scale">1</real>
+                    <real name="offset">0</real>
+                </group>
+                <group name="strain units">
+                    <string name="description">strain</string>
+                    <real name="scale">1</real>
+                    <real name="offset">0</real>
+                </group>
+                <group name="temperature units">
+                    <string name="description">degC</string>
+                    <real name="scale">1</real>
+                    <real name="offset">0</real>
+                </group>
+                <group name="force units">
+                    <string name="description">N</string>
+                    <real name="scale">1</real>
+                    <real name="offset">0</real>
+                </group>
+                <group name="distance units">
+                    <string name="description">m</string>
+                    <real name="scale">1</real>
+                    <real name="offset">0</real>
+                </group>
+                <boolean name="surface as nodal">true</boolean>
+                <enumerator name="extract strain type">Total</enumerator>
+                <boolean name="extract forces">false</boolean>
+                <boolean name="extract strains">false</boolean>
+                <boolean name="extract groups">true</boolean>
+                <string name="debug items">None</string>
+            </group>
+            <group name="job">
+                <enumerator name="type">general</enumerator>
+                <group name="material databases">
+                    <array name="materials" size="2">
+                        <entry index="0">
+                            <group name="material">
+                                <string name="fatigue strength coefficient (sf')">356.0</string>
+                                <string name="fatigue ductility coefficient (Ef')">0</string>
+                                <string name="fatigue strength exponent (b)">-0.0415080</string>
+                                <string name="fatigue ductility exponent (c)">0</string>
+                                <string name="K'">0</string>
+                                <string name="Young's modulus">398000</string>
+                                <string name="ultimate tensile strength">356.0</string>
+                                <string name="n'">0</string>
+                                <string name="CAEL">1E11</string>
+                                <string name="material name">TungstenIrradiated</string>
+                                <string name="temperature list">0</string>
+                                <group name="stress-life curve">
+                                    <string name="control series">0</string>
+                                    <string name="sample series">0</string>
+                                </group>
+                                <group name="torsion-life curve">
+                                    <string name="control series">0</string>
+                                </group>
+                                <string name="Poisson's ratio">0.28</string>
+                                <string name="algorithm">NormalStress:-Goodman</string>
+                                <string name="class">Other</string>
+                                <string name="units">Use system default</string>
+                                <string name="quality">Caution_Approximate!!</string>
+                                <string name="comment 1">approximated for irradiated tungsten</string>
+                                <string name="revision number">98</string>
+                                <string name="revision date">25 Feb. 2022</string>
+                                <string name="default MSC">"C:\SIMULIA\EstProducts\2020\win_b64\Durability_resources\data\goodman.msc"</string>
+                                <string name="grey iron index">None</string>
+                                <string name="Convert SN To TN">1</string>
+                            </group>
+                        </entry>
+                        <entry index="1">
+                            <group name="material">
+                                <string name="fatigue strength coefficient (sf')">-9999</string>
+                                <string name="fatigue ductility coefficient (Ef')">-9999</string>
+                                <string name="fatigue strength exponent (b)">-9999</string>
+                                <string name="fatigue ductility exponent (c)">-9999</string>
+                                <string name="K'">-9999</string>
+                                <string name="Young's modulus">202713</string>
+                                <string name="ultimate tensile strength">1379.0 1137.675</string>
+                                <string name="n'">-9999</string>
+                                <string name="CAEL">1.00E+30</string>
+                                <string name="0.2% Buch proof stress">909.6</string>
+                                <string name="material name">Inconel_718_SDL</string>
+                                <string name="temperature list">20 538</string>
+                                <group name="stress-life curve">
+                                    <string name="control series">(636.3010 608.7220 581.1430 544.686 510.2122 489.5280 468.8437 461.9489 461.900)  (496.4227 475.7384 461.9489 437.8173 424.0277 413.6856 399.8961 382.6592 375.7644)</string>
+                                    <string name="sample series">5e4 1e5 2e5 5e5 1e6 2e6 5e6 1e7 2e7</string>
+                                </group>
+                                <group name="torsion-life curve">
+                                    <string name="control series">-9999</string>
+                                    <string name="sample series">-9999</string>
+                                </group>
+                                <string name="R ratio list">-9999</string>
+                                <group name="strain-life curve">
+                                    <string name="control series">-9999</string>
+                                    <string name="sample series">-9999</string>
+                                </group>
+                                <group name="stress-strain curve">
+                                    <string name="control series">-9999</string>
+                                    <string name="sample series">-9999</string>
+                                </group>
+                                <string name="strain rate list">-9999</string>
+                                <string name="hours list">-9999</string>
+                                <string name="initial compressive stresses">-9999</string>
+                                <string name="initial tensile stresses">-9999</string>
+                                <string name="pre-soak factor">-9999</string>
+                                <string name="Weibull slope">3</string>
+                                <string name="Weibull minimum">0.25</string>
+                                <string name="ultimate compressive strength">-9999</string>
+                                <string name="tensile secant slope">-9999</string>
+                                <string name="compressive K'">-9999</string>
+                                <string name="compressive n'">-9999</string>
+                                <string name="compressive secant slope">-9999</string>
+                                <string name="modulus of unloading">-9999</string>
+                                <string name="SWT coefficient">-9999</string>
+                                <string name="SWT exponent">-9999</string>
+                                <string name="fatigue strength exponent above knee (b2)">-9999</string>
+                                <string name="life curve knee">-9999</string>
+                                <string name="in-phase loading factor">-9999</string>
+                                <string name="out-of-phase loading factor">-9999</string>
+                                <string name="compressive relaxed stresses">-9999</string>
+                                <string name="tensile relaxed stresses">-9999</string>
+                                <string name="Dang Van endurance limit stress">-9999</string>
+                                <string name="Dang Van stress ratio">-9999</string>
+                                <string name="Poisson's ratio">0.33</string>
+                                <string name="algorithm">NormalStress:-User:-msc_inconel_718_02.msc</string>
+                                <string name="class">Other</string>
+                                <string name="units">Use system default</string>
+                                <group name="creep">
+                                    <string name="monotonic K'">-9999</string>
+                                    <string name="monotonic n'">-9999</string>
+                                    <string name="damage to harden">-9999</string>
+                                    <string name="strain rates">-9999</string>
+                                    <string name="ductility values">-9999</string>
+                                    <string name="strain list">-9999</string>
+                                    <string name="stress list">-9999</string>
+                                    <string name="strain table">-9999</string>
+                                    <string name="stress table">-9999</string>
+                                    <string name="temperature threshold">-9999</string>
+                                    <string name="fatigue percentage values">-9999</string>
+                                    <string name="creep percentage values">-9999</string>
+                                </group>
+                                <string name="quality">-9999</string>
+                                <string name="source">MIL-HDBK-5H; 1 Dec 1998</string>
+                                <string name="comment 1">Nickel Alloy</string>
+                                <string name="comment 2">-9999</string>
+                                <string name="revision number">0</string>
+                                <string name="revision date">-9999</string>
+                                <string name="revision history">-9999</string>
+                                <string name="default MSC">-9999</string>
+                                <string name="threshold stress intensity factor">-9999</string>
+                                <string name="critical distance">-9999</string>
+                                <string name="alternating shear stress">-9999</string>
+                                <string name="alternating bending fatigue strength">-9999</string>
+                                <group name="fully reversed">
+                                    <string name="fatigue ductility coefficient (Ef')">-9999</string>
+                                    <string name="fatigue ductility exponent (c)">-9999</string>
+                                </group>
+                                <group name="plastic reversed by creep">
+                                    <string name="fatigue ductility coefficient (Ef')">-9999</string>
+                                    <string name="fatigue ductility exponent (c)">-9999</string>
+                                </group>
+                                <group name="creep reversed by plastic">
+                                    <string name="fatigue ductility coefficient (Ef')">-9999</string>
+                                    <string name="fatigue ductility exponent (c)">-9999</string>
+                                </group>
+                                <string name="Walker gamma (r is positive)">-9999</string>
+                                <string name="Walker gamma (r is negative)">-9999</string>
+                                <string name="Default knock-down curve">-9999</string>
+                                <string name="static fatigue strength coefficient (sf)">-9999</string>
+                                <string name="fkm material">-9999</string>
+                                <string name="elongation">-9999</string>
+                                <string name="grey iron index">-9999</string>
+                                <string name="softening factor">-9999</string>
+                                <string name="Convert SN To TN">-9999</string>
+                            </group>
+                        </entry>
+                    </array>
+                    <boolean name="nodal property mapping enabled">true</boolean>
+                    <boolean name="material diagnostics">true</boolean>
+                    <boolean name="stress-life table enabled">true</boolean>
+                    <boolean name="abort if no stress life data">true</boolean>
+                    <boolean name="correct elastic stress">false</boolean>
+                    <enumerator name="temperature interpolation">linear</enumerator>
+                    <boolean name="temperature clamp warning">false</boolean>
+                    <boolean name="material extrapolation warning">false</boolean>
+                    <boolean name="R-ratio clamp warning">false</boolean>
+                    <real name="Downing coefficient">2.55</real>
+                    <real name="Downing exponent">-0.8</real>
+                </group>
+                <array name="groups" size="2">
+                    <entry index="0">
+                        <group name="group">
+                            <string name="number">0</string>
+                            <string name="group name">Default</string>
+                            <string name="display name">Default</string>
+                            <string name="algorithm">NoAnalysis</string>
+                            <string name="mean stress correction">Unknown MSC</string>
+                            <integer name="subgroup">0</integer>
+                            <file name="user MSC file"/>
+                        </group>
+                    </entry>
+                    <entry index="1">
+                        <group name="group">
+                            <string name="number">1</string>
+                            <string name="group name">PART-DEFAULT_1_SHROUD</string>
+                            <string name="display name">PART-DEFAULT_1_SHROUD</string>
+                            <string name="algorithm">NormalStress</string>
+                            <string name="mean stress correction">User</string><!--Goodman-->
+                            <integer name="subgroup">1</integer>
+                            <file name="user MSC file">/usr/SIMULIA/EstProducts/2021/linux_a64/Durability_resources/database/msc_inconel_718_02.msc</file>
+                        </group>
+                    </entry>
+                </array>
+                <group name="gating">
+                    <real name="tensor gate">5</real>
+                    <real name="load history gate">5</real>
+                    <real name="near zero stress">10</real>
+                    <real name="near zero strain">10</real>
+                    <boolean name="tensor gate enabled">true</boolean>
+                    <boolean name="load history gate enabled">false</boolean>
+                    <boolean name="CAEL gate enabled">true</boolean>
+                    <boolean name="trigonometric look-up tables">true</boolean>
+                </group>
+                <group name="probability">
+                    <string name="target lives">1000</string>
+                </group>
+                <group name="exports">
+                    <group name="results">
+                        <file name="FER file">./fesafe.fer</file>
+                        <integer name="contour policy">0</integer>
+                    </group>
+                    <boolean name="logarithmic lives">true</boolean>
+                    <group name="plots">
+                        <group name="worst node">
+                            <boolean name="Haigh critical plane">true</boolean>
+                            <boolean name="Smith critical plane">false</boolean>
+                            <boolean name="Von Mises stress">false</boolean>
+                            <boolean name="ignore overflows">true</boolean>
+                        </group>
+                        <group name="worst cycle">
+                            <boolean name="Haigh">true</boolean>
+                            <boolean name="Smith">false</boolean>
+                        </group>
+                        <boolean name="Haigh">true</boolean>
+                        <boolean name="Smith">false</boolean>
+                        <boolean name="Von Mises stress">false</boolean>
+                        <boolean name="stress tensors">false</boolean>
+                        <boolean name="stress tensors after gating">false</boolean>
+                        <boolean name="principals">false</boolean>
+                        <boolean name="critical plane normals">false</boolean>
+                        <boolean name="plasticity corrected critical plane normals">false</boolean>
+                        <boolean name="all plane normals">false</boolean>
+                        <boolean name="Dang Van">false</boolean>
+                        <boolean name="damage">false</boolean>
+                        <boolean name="TURBOlife">false</boolean>
+                        <boolean name="modal">false</boolean>
+                        <boolean name="critical distance plots">false</boolean>
+                        <boolean name="critical distance tensor histories">false</boolean>
+                        <boolean name="PSD Frequency Response Function plots">false</boolean>
+                    </group>
+                    <group name="contours">
+                        <boolean name="life">true</boolean>
+                        <boolean name="damage">false</boolean>
+                        <boolean name="block damage">false</boolean>
+                        <boolean name="FRF horizontal">false</boolean>
+                        <boolean name="FRF vertical">false</boolean>
+                        <boolean name="FRF radial">false</boolean>
+                        <boolean name="FRF worst">false</boolean>
+                        <boolean name="largest loading stress">true</boolean>
+                        <boolean name="SMAXYS">false</boolean>
+                        <boolean name="SMAXUTS">false</boolean>
+                        <boolean name="SM">false</boolean>
+                        <boolean name="SMPreNeuber">true</boolean>
+                        <boolean name="SRP nodal temperatures">false</boolean>
+                        <boolean name="critical planes all">false</boolean>
+                        <boolean name="critical planes worst">false</boolean>
+                        <boolean name="critical distance success">false</boolean>
+                        <boolean name="critical distance diagnostics">false</boolean>
+                        <boolean name="critical distance cycle">false</boolean>
+                        <boolean name="turbolife accumulated stress strain">false</boolean>
+                        <boolean name="NASA life2">false</boolean>
+                        <boolean name="temperature-dependent UTS and FS">false</boolean>
+                        <boolean name="maximum temperature">false</boolean>
+                    </group>
+                    <group name="logs">
+                        <boolean name="load_sensitivity">false</boolean>
+                        <boolean name="worst n lives">false</boolean>
+                        <integer name="n">100</integer>
+                        <boolean name="ranked elimination table">false</boolean>
+                        <boolean name="nodal information">false</boolean>
+                        <boolean name="block life table">false</boolean>
+                        <boolean name="plane life table">false</boolean>
+                        <boolean name="critical plane life table">false</boolean>
+                        <boolean name="all planes life table">false</boolean>
+                        <boolean name="fos planes">false</boolean>
+                        <boolean name="grey iron damage">false</boolean>
+                        <boolean name="dataset stresses">false</boolean>
+                        <boolean name="ep residuals">false</boolean>
+                        <boolean name="stress and strain tensors">false</boolean>
+                        <boolean name="principals">false</boolean>
+                        <boolean name="TURBOlife">false</boolean>
+                        <boolean name="critical distance items">false</boolean>
+                        <boolean name="critical distance summary">false</boolean>
+                        <boolean name="PSD items">false</boolean>
+                        <enumerator name="history indexing">One</enumerator>
+                    </group>
+                    <boolean name="only analyse listed items">false</boolean>
+                    <boolean name="traffic lights">false</boolean>
+                    <real name="traffic lights lower">1e+06</real>
+                    <real name="traffic lights upper">1e+07</real>
+                    <enumerator name="unit system">Metric</enumerator>
+                </group>
+                <group name="fos">
+                    <real name="design life">1.3e+08</real>
+                    <boolean name="infinite design life">false</boolean>
+                    <real name="maximum">5</real>
+                    <real name="fine maximum">1.5</real>
+                    <real name="fine minimum">0.8</real>
+                    <real name="minimum">0.05</real>
+                    <integer name="maximum coarse iterations">20</integer>
+                    <integer name="maximum fine iterations">24</integer>
+                </group>
+                <group name="critical distance">
+                    <boolean name="apply corrections">false</boolean>
+                    <enumerator name="method">point</enumerator>
+                    <boolean name="use safety-factor thresholds">true</boolean>
+                    <real name="safety-factor ceiling">10</real>
+                    <real name="safety-factor floor">0</real>
+                    <boolean name="allow quadratic interpolation">true</boolean>
+                </group>
+                <group name="welds">
+                    <real name="proportional variance threshold">0.8</real>
+                    <boolean name="use modified wang_brown">true</boolean>
+                    <boolean name="use nonlinear shear correction">true</boolean>
+                    <enumerator name="structural stress calculation mode">Basic Nodal Force</enumerator>
+                    <boolean name="automatically bound plate thickness">false</boolean>
+                    <real name="plate bound median margin">0.25</real>
+                    <boolean name="split incomplete toes">false</boolean>
+                    <real name="min line length post split">0.75</real>
+                    <boolean name="reject no through nodes">false</boolean>
+                    <boolean name="auto-detect toe failures">true</boolean>
+                    <boolean name="auto-detect fusion failures">true</boolean>
+                    <boolean name="auto-detect throat failures">false</boolean>
+                    <boolean name="auto-detect root failures">false</boolean>
+                    <boolean name="use compact contour mode">true</boolean>
+                    <real name="co-planarity tolerance">5</real>
+                    <real name="cone tolerance">0.05</real>
+                    <enumerator name="Ir function">IrDisplacement</enumerator>
+                    <integer name="smoothing iterations">0</integer>
+                    <enumerator name="weld end correction">VirtualNode</enumerator>
+                    <enumerator name="throat/fusion failure sense">FromSurface</enumerator>
+                    <real name="wrap angle">90</real>
+                    <real name="blunt root threshold">0.25</real>
+                </group>
+                <group name="planes">
+                    <integer name="critical plane search count">18</integer>
+                </group>
+                <group name="psd">
+                    <enumerator name="PSD response">Von Mises</enumerator>
+                    <boolean name="Apply nodal filtering">false</boolean>
+                    <integer name="Number of stress range intervals">1000</integer>
+                    <real name="RMS stress cut-off multiple">10</real>
+                    <real name="Combined shear-normal K">0.25</real>
+                    <boolean name="Bound Dirlik at UTS">false</boolean>
+                    <enumerator name="Weld SS response">Normal</enumerator>
+                </group>
+                <file name="loading file">./Abq_Fatigue.ldf</file>
+                <file name="output file">./LasagnaOpt_Dynamic_IN718_Pulses_FESAFE.odb</file>
+                <string name="loading mode">LDF</string>
+                <real name="scale factor">1.0</real>
+                <real name="overflow value">0</real>
+                <real name="infinite life value">1.0e+15</real>
+                <integer name="modal samples per cycle">10</integer>
+                <real name="modal gate percentage">0.1</real>
+                <boolean name="disable temperature analysis">false</boolean>
+                <string name="life units description">Repeats</string>
+                <real name="life units factor">1</real>
+                <boolean name="disable triaxiality">false</boolean>
+                <boolean name="disable failed directional cosine to XYZ">false</boolean>
+                <boolean name="Von Mises signed">false</boolean>
+                <boolean name="ignore compressive cycles">false</boolean>
+                <boolean name="enforce thread affinity">false</boolean>
+                <integer name="max overflows">1000</integer>
+            </group>
+        </group>
+    </data>
+</root>
